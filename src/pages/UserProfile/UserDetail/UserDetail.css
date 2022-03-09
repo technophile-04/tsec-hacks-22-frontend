@@ -1,0 +1,39 @@
+.stud-container {
+  width: 100%;
+
+  padding: 20px;
+  background-color: #fff;
+  height: 30vh;
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.detail-container {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: flex-start;
+  width: 30%;
+}
+.credits {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.card {
+  flex-grow: 1;
+  margin: 5px;
+  color: #fff;
+  padding: 24px;
+  width: 150px;
+  border-radius: 20px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 91, 92, 1) 0%,
+    rgba(254, 158, 159, 1) 100%
+  );
+  -webkit-box-shadow: -3px 6px 21px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -3px 6px 21px -3px rgba(0, 0, 0, 0.75);
+  box-shadow: -3px 6px 21px -3px rgba(0, 0, 0, 0.75);
+}
