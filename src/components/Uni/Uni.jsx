@@ -27,7 +27,7 @@ function Uni() {
     <>
       <NavBar />
       <UniSec1 name={college.name} />
-      <div className="uni-courses">
+      <div>
         {courses.map((cou) => {
           return <Course name={cou.name} credit={cou.credit} year={cou.year} />;
         })}
