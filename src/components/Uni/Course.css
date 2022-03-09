@@ -3,10 +3,15 @@
   flex-direction: column;
   padding: 10px;
   margin: 10px;
-  /* background-color:  ; */
+  background-color: #dbfafa;
   width: 300px;
-  height: 250px;
+  height: 200px;
   border-radius: 20px;
-  color: #fff;
+  color: black;
+  justify-content: space-evenly;
+}
+
+.course-credit {
+  display: flex;
   justify-content: space-evenly;
 }

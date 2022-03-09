@@ -5,6 +5,7 @@
   display: flex;
   justify-content: space-evenly;
   padding: 20px;
+  border-bottom: 1px solid #d3d1d141;
 }
 
 #unImg {

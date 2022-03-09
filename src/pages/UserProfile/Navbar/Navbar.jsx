@@ -8,10 +8,10 @@ function Navbar() {
   return (
     <>
       <div className="nav-container">
-        <Heading color="black"> Academic Bank Of Credit</Heading>
+        <Heading color="#fff"> Bank Of Academic Credit</Heading>
         <Button
           leftIcon={<ArrowBackIcon />}
-          color="black"
+          color="white"
           bg="whiteAlpha.200"
           border="2px"
         >
