@@ -1,9 +1,9 @@
 .stud-container {
   width: 100%;
 
-  padding: 40px;
+  padding: 40px 9.5%;
   background-color: #fff;
-  height: 35vh;
+  min-height: 35vh;
   color: black;
   display: flex;
   justify-content: center;

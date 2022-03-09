@@ -26,11 +26,11 @@ function UserDetail() {
       </div>
       <div className="card">
         <p style={{ fontWeight: "500" }}>ACADEMIC BANK OF CREDITS</p>
-        <p>ID</p>
+        <p style={{margin:"10px 0"}}>ID</p>
         <p style={{ fontWeight: "600", fontSize: "25px" }}>
           {StudentData.name}
         </p>
-        <p style={{ textAlign: "center" }}>
+        <p>
           We use basic information from your DigiLocker account to identify you
           and allow access to ABC platform
         </p>
