@@ -1,5 +1,6 @@
 import UserProfile from "../pages/UserProfile/UserProfile.jsx";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Landing from "../pages/Landing.jsx";
 function App() {
   return (
     <BrowserRouter>
