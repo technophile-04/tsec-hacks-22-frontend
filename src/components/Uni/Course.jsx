@@ -8,7 +8,7 @@ function Course(props) {
         {props.name}
       </p>
       <div className="course-credit">
-        <p>Credits:{props.credit}</p>
+        <p style={{ fontSize: "18px" }}>Credits:{props.credit}</p>
         <p>Year:{props.year}</p>
       </div>
       <p style={{ alignSelf: "center" }}>Department:{props.dep}</p>
