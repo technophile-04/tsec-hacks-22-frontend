@@ -1,7 +1,6 @@
 import React from "react";
 import NavBar from "../../pages/UserProfile/Navbar/Navbar";
-import VerifyList from "./VerifyList";
-import "./PendingT.css";
+import "./TransferConfirm.css";
 import { Link } from "react-router-dom";
 import {
   Button,
@@ -18,44 +17,22 @@ import {
   ModalCloseButton,
   useDisclosure,
 } from "@chakra-ui/react";
-
-function PendingT() {
-  const pendingCoursesToBeVerified = [
-    {
-      name: "Aadil",
-      courseName: "Mechanics",
-      credits: "4",
-      id: "12",
-    },
-    {
-      name: "Ayush",
-      courseName: "Chemistry",
-      credits: "2",
-      id: "12",
-    },
-    ,
-    {
-      name: "Shiv",
-      courseName: "Physics",
-      credits: "3",
-      id: "12",
-    },
-    {
-      name: "Jinish",
-      courseName: "Drawing",
-      credits: "2",
-      id: "12",
-    },
+function TransferConfirm() {
+  const pendingTranfers = [
+    { name: "Aadil", id: "12" },
+    { name: "Shiv", id: "112" },
+    { name: "Jinish", id: "1122" },
+    { name: "Ayush", id: "12" },
   ];
   return (
     <>
       <NavBar />
       <div className="course-heading">
-        <h3 id="courses-heading">Verify Courses</h3>
+        <h3 id="courses-heading">Transfer List</h3>
       </div>
       <div className="courses-container">
         <div className="courses">
-          <Grid templateColumns="repeat(4, 1fr)" gap={6} w="full" color="black">
+          <Grid templateColumns="repeat(3, 1fr)" gap={6} w="full" color="black">
             <GridItem w="100%" h="10">
               <Text textAlign="center" my="2">
                 Name
@@ -63,29 +40,17 @@ function PendingT() {
             </GridItem>
             <GridItem w="100%" h="10">
               <Text textAlign="center" my="2">
-                Credits
+                Profile
               </Text>
             </GridItem>
             <GridItem w="100%" h="10">
               <Text textAlign="center" my="2">
-                Course Name
-              </Text>
-            </GridItem>
-
-            <GridItem w="100%" h="10">
-              <Text textAlign="center" my="2">
-                Verification
+                Selection
               </Text>
             </GridItem>
           </Grid>
-          {pendingCoursesToBeVerified.map((course, index) => (
-            <Card
-              courseName={course.courseName}
-              name={course.name}
-              credits={course.credits}
-              index={index}
-              key={index}
-            />
+          {pendingTranfers.map((course, index) => (
+            <Card name={course.name} id={course.id} index={index} key={index} />
           ))}
         </div>
       </div>
@@ -107,7 +72,7 @@ const Card = (props) => {
     <>
       <Container minW="full" p="0">
         <Grid
-          templateColumns="repeat(4, 1fr)"
+          templateColumns="repeat(3, 1fr)"
           gap={6}
           bg={bgColor}
           color="white"
@@ -118,32 +83,28 @@ const Card = (props) => {
               {props.name}
             </Text>
           </GridItem>
-          <GridItem w="100%" h="10">
-            <Text textAlign="center" my="2">
-              {props.credits}
-            </Text>
-          </GridItem>
-          <GridItem w="100%" h="10">
-            <Text textAlign="center" my="2">
-              {props.courseName}
-            </Text>
-          </GridItem>
 
           <GridItem w="100%" h="10">
-            <Button onClick={onOpen} ml="22">
-              Verify
+            <Text textAlign="center" my="2">
+              <Link to={`/user/${props.id}`}>View Profile</Link>
+            </Text>
+          </GridItem>
+          <GridItem w="100%" h="10">
+            <Button onClick={onOpen} ml="140">
+              Select
             </Button>
           </GridItem>
         </Grid>
       </Container>
+
       <Modal blockScrollOnMount={false} isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
-          <ModalHeader>Verify </ModalHeader>
+          <ModalHeader>Select </ModalHeader>
           <ModalCloseButton />
           <ModalBody>
             <Text fontWeight="bold" mb="1rem">
-              Verify the course and award credits to the student {props.name}
+              Select and enroll {props.name}
             </Text>
           </ModalBody>
 
@@ -158,4 +119,4 @@ const Card = (props) => {
   );
 };
 
-export default PendingT;
+export default TransferConfirm;

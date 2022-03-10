@@ -60,10 +60,10 @@ function Uni() {
       </div>
 
       <div className="uni-buttons">
-        <Link to={`/uni/users/${params.id}`}>
+        <Link to={`/uni/verify/${params.id}`}>
           <button>Verify </button>
         </Link>
-        <Link to={`/uni/users/${params.id}`}>
+        <Link to={`/uni/transfer/${params.id}`}>
           <button>View Transfers</button>
         </Link>
       </div>
