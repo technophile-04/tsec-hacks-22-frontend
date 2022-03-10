@@ -30,8 +30,8 @@ function TransferConfirm() {
       <div className="course-heading">
         <h3 id="courses-heading">Transfer List</h3>
       </div>
-      <div className="courses-container">
-        <div className="courses">
+      <div className="courses-container" style={{ height: "81vh" }}>
+        <div className="courses" pb="30">
           <Grid templateColumns="repeat(3, 1fr)" gap={6} w="full" color="black">
             <GridItem w="100%" h="10">
               <Text textAlign="center" my="2">
@@ -61,7 +61,9 @@ const Card = (props) => {
   let bgColor = "";
   const { isOpen, onOpen, onClose } = useDisclosure();
 
-  props.index % 2 === 0 ? (bgColor = "#67A4FC") : (bgColor = "#AE85F9");
+  props.index % 2 === 0
+    ? (bgColor = "rgb(88,170,252,1)")
+    : (bgColor = "rgb(88,170,252,0.65)");
   console.log(props.index);
 
   const handleClick = () => {
@@ -90,7 +92,7 @@ const Card = (props) => {
             </Text>
           </GridItem>
           <GridItem w="100%" h="10">
-            <Button onClick={onOpen} ml="140">
+            <Button onClick={onOpen} size="sm" my="1" ml="140">
               Select
             </Button>
           </GridItem>

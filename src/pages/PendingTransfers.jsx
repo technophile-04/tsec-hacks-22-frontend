@@ -5,6 +5,10 @@ function PendingTransfers() {
   return (
     <div>
       <PendingT />
+      {/* <div
+        style={{ height: "20vh", backgroundColor: "white" }}
+        className="converage"
+      ></div> */}
     </div>
   );
 }
