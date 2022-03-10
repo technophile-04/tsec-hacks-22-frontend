@@ -1,6 +1,5 @@
 import React from "react";
 import "./UserDetail.css";
-import { Image, Box } from "@chakra-ui/react";
 
 const StudentData = { name: "Aadil Saudagar", Credits: "10" };
 function UserDetail() {
@@ -26,7 +25,7 @@ function UserDetail() {
       </div>
       <div className="card">
         <p style={{ fontWeight: "500" }}>ACADEMIC BANK OF CREDITS</p>
-        <p style={{margin:"10px 0"}}>ID</p>
+        <p style={{ margin: "10px 0" }}>ID</p>
         <p style={{ fontWeight: "600", fontSize: "25px" }}>
           {StudentData.name}
         </p>
