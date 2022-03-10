@@ -10,8 +10,8 @@ const Hero = () => {
             <Container m="0">
                 <VStack alignItems="left">
                     <Text as="h3" fontSize="2xl">Academic Bank of Credits</Text>
-                    <Text as="h1" fontSize="4xl">Enabling students mobility</Text>
-                    <Text as="h2" fontSize="2xl" mt="0">across Higher Education Institution</Text>
+                    <Text as="h1" fontSize="4xl" fontWeight="bold">Enabling students mobility</Text>
+                    <Text as="h2" fontSize="2xl" fontWeight="bold" style={{marginTop:"-4px",marginBottom:"8px"}}>across Higher Education Institution</Text>
                     <Text fontSize="sm" color="gray.300">Helps in seamless integration of skills and experiences into a Credit Based system</Text>
                 </VStack>
             </Container>

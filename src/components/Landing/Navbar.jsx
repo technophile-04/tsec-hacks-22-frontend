@@ -50,7 +50,7 @@ const Navbar = () => {
   return (
     <Container maxW="container.xl" p="0">
       <Flex w="100%" px="6" py="5" align="center" justify="space-between">
-        <Text>ACADEMIC BANK OF CREDIT</Text>
+        <Text as="h1" fontSize="3xl" fontStyle="" fontWeight="bold">DeBAC</Text>
         <HStack>
           <Menu>
             <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
