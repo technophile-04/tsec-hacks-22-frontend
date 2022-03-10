@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import NavBar from "../../pages/UserProfile/Navbar/Navbar";
 import UniSec1 from "../../components/Uni/UniSec1";
 import Course from "./Course";
@@ -8,6 +8,13 @@ import { Link, useParams } from "react-router-dom";
 
 function Uni() {
   const params = useParams();
+
+  const [courses, setCourses] = useState([]);
+
+  useEffect(() => {
+  }, [courses]);
+  
+
   const college = {
     name: "D.J. Sanghvi College of Engineering",
     courses: [
@@ -20,7 +27,7 @@ function Uni() {
       { name: "FLAT", credit: 9, year: 1, Department: "IT" },
     ],
   };
-  const { courses } = college;
+  const { courses:tempCourses } = college;
 
   // const [college, setCollege] = useState({
   //   name: "D.J. Sanghvi College of Engineering",
@@ -47,7 +54,7 @@ function Uni() {
           backgroundColor: "white",
         }}
       >
-        {courses.map((cou) => {
+        {tempCourses.map((cou) => {
           return (
             <Course
               name={cou.name}
