@@ -6,6 +6,7 @@
   min-height: 35vh;
   color: black;
   display: flex;
+  padding-top: 50px;
   justify-content: center;
 }
 
@@ -30,8 +31,8 @@
   border-radius: 20px;
   background: linear-gradient(
     90deg,
-    rgba(255, 91, 92, 1) 0%,
-    rgba(254, 158, 159, 1) 100%
+    rgba(88, 170, 252, 1) 0%,
+    rgba(175, 133, 249, 1) 100%
   );
   -webkit-box-shadow: -3px 6px 21px -3px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -3px 6px 21px -3px rgba(0, 0, 0, 0.75);

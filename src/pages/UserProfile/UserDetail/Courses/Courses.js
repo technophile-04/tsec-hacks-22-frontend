@@ -91,7 +91,7 @@ function Courses() {
 const Card = (props) => {
   let bgColor = "";
 
-  props.index % 2 === 0 ? (bgColor = "rgba(255, 91, 92, 1)") : (bgColor = "rgba(254, 158, 159, 1)");
+  props.index % 2 === 0 ? (bgColor = "rgba(88, 170, 252, 1)") : (bgColor = "rgba(88, 170, 252, 0.65)");
 
   const handleClick = () => {
     window.location.href = "https://etherscan.io/tx:" + props.course.hash;
@@ -131,7 +131,7 @@ const Card = (props) => {
           </Text>
         </GridItem>
         <GridItem w="100%" h="10">
-          <Button onClick={handleClick} ml="10">
+          <Button onClick={handleClick} ml="10" size="sm" mt="1">
             View
           </Button>
         </GridItem>

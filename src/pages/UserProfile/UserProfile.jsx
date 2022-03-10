@@ -34,10 +34,11 @@ function UserProfile() {
   return (
     <>
       <Navbar />
+
       <UserDetail user={user}/>
       <Courses courses={courses}/>
-      <HStack bg="white" justifyContent="space-evenly" px="15%" py="5%">
-      <Button colorScheme="red" onClick={onOpenAdd}>
+      <HStack bg="white" justifyContent="space-evenly" px="15%" py="5%" pb="32">
+      <Button colorScheme="blue" onClick={onOpenAdd}>
         Add New Courses
       </Button>
       <Modal
@@ -80,7 +81,7 @@ function UserProfile() {
 
 
 
-      <Button colorScheme="red" onClick={onOpenTrans}>
+      <Button colorScheme="blue" onClick={onOpenTrans}>
         Apply for transfer
       </Button>
       <Modal
