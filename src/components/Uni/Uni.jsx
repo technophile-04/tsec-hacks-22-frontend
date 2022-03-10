@@ -41,8 +41,8 @@ function Uni() {
     <>
       <NavBar />
       <UniSec1 name={college.name} />
-      <div className="course-heading">
-        <h3 id="courses-heading">Courses Offered</h3>
+      <div style={{ padding:"20px 0"}} className="course-heading">
+        <h3 id="courses-heading" style={{fontWeight:"bold",padding:"20px 0"}}>Courses Offered</h3>
       </div>
       <div
         style={{
@@ -66,7 +66,7 @@ function Uni() {
         })}
       </div>
 
-      <div className="uni-buttons">
+      <div className="uni-buttons" margin="20px 0">
         <Link to={`/uni/verify/${params.id}`}>
           <button>Verify </button>
         </Link>
